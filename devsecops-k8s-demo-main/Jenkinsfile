@@ -1,4 +1,4 @@
-@Library('slack') _
+// @Library('slack') _
 
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
@@ -46,8 +46,8 @@ pipeline {
     deploymentName = "devsecops"
     containerName = "devsecops-container"
     serviceName = "devsecops-svc"
-    imageName = "siddharth67/numeric-app:${GIT_COMMIT}"
-    applicationURL="http://devsecops-demo.eastus.cloudapp.azure.com"
+    imageName = "ezzy187/numeric-app:${GIT_COMMIT}"
+    applicationURL="http://devsecops-demo.southafricanorth.cloudapp.azure.com"
     applicationURI="/increment/99"
   }
 
